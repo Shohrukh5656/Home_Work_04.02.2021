@@ -115,7 +115,7 @@ namespace ConsoleApplication
                 string LastName = Console.ReadLine();
                 Console.Write("MiddleName = ");
                 string MiddleName = Console.ReadLine();
-                Console.Write("Date of Birth = ");
+                Console.Write("Date of Birth(гггг-дд-мм) = ");
                 string BirthDate = Console.ReadLine();
                 string SqlInsert = $"Insert into Person ([LastName],[FirstName],[MiddleName], [BirthDate]) values ('{LastName}', '{FirstName}', '{MiddleName}', '{BirthDate}')";
                 using (SqlConnection connections1 = new SqlConnection(Stringconnection))
