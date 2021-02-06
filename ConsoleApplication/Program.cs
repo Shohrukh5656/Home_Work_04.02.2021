@@ -79,7 +79,7 @@ namespace ConsoleApplication
                 Console.Write("Изменить отчество = ");
                 UpdateMiddlename = Console.ReadLine();
                 string UpdateBirthDate;
-                Console.Write("Изменить дату рождения = ");
+                Console.Write("Изменить дату рождения (гггг-дд-мм) = ");
                 UpdateBirthDate = Console.ReadLine();
                 commands.CommandText = "update person set " + "FirstName = " + $"'{UpdateName}'," + "LastName = " + $"'{UpdateSurname}'," + "MiddleName = " + $"'{UpdateMiddlename}'," + "BirthDate = " + $"'{UpdateBirthDate} '" + "where Id = " + $"'{idselect}'";
 
@@ -109,13 +109,13 @@ namespace ConsoleApplication
             }
             if (numeric == 1)
             {
-                Console.Write("Name = ");
+                Console.Write("Имя = ");
                 string FirstName = Console.ReadLine();
-                Console.Write("Surname = ");
+                Console.Write("Фамилия = ");
                 string LastName = Console.ReadLine();
-                Console.Write("MiddleName = ");
+                Console.Write("Отчество = ");
                 string MiddleName = Console.ReadLine();
-                Console.Write("Date of Birth(гггг-дд-мм) = ");
+                Console.Write("Дата рождения (гггг-дд-мм) = ");
                 string BirthDate = Console.ReadLine();
                 string SqlInsert = $"Insert into Person ([LastName],[FirstName],[MiddleName], [BirthDate]) values ('{LastName}', '{FirstName}', '{MiddleName}', '{BirthDate}')";
                 using (SqlConnection connections1 = new SqlConnection(Stringconnection))
