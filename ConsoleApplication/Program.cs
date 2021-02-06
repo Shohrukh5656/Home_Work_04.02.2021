@@ -109,10 +109,10 @@ namespace ConsoleApplication
             }
             if (numeric == 1)
             {
-                Console.Write("Surname = ");
-                string LastName = Console.ReadLine();
                 Console.Write("Name = ");
                 string FirstName = Console.ReadLine();
+                Console.Write("Surname = ");
+                string LastName = Console.ReadLine();
                 Console.Write("MiddleName = ");
                 string MiddleName = Console.ReadLine();
                 Console.Write("Date of Birth = ");
